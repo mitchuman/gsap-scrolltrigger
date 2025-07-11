@@ -3,7 +3,6 @@ import './app.css'
 import type { Metadata } from 'next'
 
 const fontSans = Geist({
-	variable: '--font-geist-sans',
 	subsets: ['latin'],
 })
 
@@ -19,7 +18,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="antialiased">{children}</body>
+			<body className="antialiased">
+				<main>{children}</main>
+			</body>
 		</html>
 	)
 }

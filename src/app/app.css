@@ -4,5 +4,5 @@
 	--color-background: #ffffff;
 	--color-foreground: #171717;
 
-	--font-sans: var(--font-geist-sans);
+	--font-sans: 'Geist', sans-serif;
 }
