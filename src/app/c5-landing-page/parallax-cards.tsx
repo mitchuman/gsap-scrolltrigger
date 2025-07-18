@@ -34,7 +34,7 @@ export default function () {
 
 	return (
 		<section id="how-we-invest" className="section space-y-12 py-24">
-			<h2 className="text-center text-3xl">How We Invest</h2>
+			<h2 className="text-center text-3xl">Lorem ipsum dolor</h2>
 
 			<div className="grid gap-1 md:grid-cols-2">
 				<Card>
