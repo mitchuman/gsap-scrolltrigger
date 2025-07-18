@@ -1,6 +1,7 @@
 import HeaderNav from './header-nav'
 import Hero from './hero'
 import ParallaxCards from './parallax-cards'
+import HeroWithMaskedImage from './hero-with-masked-image'
 
 export default function () {
 	return (
@@ -18,6 +19,7 @@ export default function () {
 				</section>
 
 				<ParallaxCards />
+				<HeroWithMaskedImage />
 			</main>
 		</>
 	)

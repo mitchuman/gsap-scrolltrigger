@@ -23,6 +23,10 @@ export default function () {
 			},
 		})
 
+		// Set initial opacity to 0 for header elements
+		gsap.set('.header-link', { opacity: 0 })
+		gsap.set('#header-logo', { opacity: 0 })
+
 		tl.to('#hero img', {
 			scale: 1,
 			rotate: '0deg',
@@ -44,6 +48,23 @@ export default function () {
 				},
 				3,
 			)
+
+		// Separate non-scrubbed animations for header elements
+		ScrollTrigger.create({
+			trigger: '#hero',
+			start: 'top top',
+			end: '60% top', // 3/5 of the way through (3 seconds of 5)
+			toggleActions: 'play none none reverse',
+			animation: gsap.to('.header-link', { opacity: 1, duration: 0.5 }),
+		})
+
+		ScrollTrigger.create({
+			trigger: '#hero',
+			start: '50% top',
+			end: 'bottom top', // Full way through (5 seconds of 5)
+			toggleActions: 'play none none reverse',
+			animation: gsap.to('#header-logo', { opacity: 1, duration: 0.5 }),
+		})
 
 		return () => {
 			ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
