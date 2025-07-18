@@ -1,0 +1,16 @@
+.arrow {
+	animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+	0%,
+	50%,
+	100% {
+		translate: 0 0;
+		opacity: 0.5;
+	}
+	25% {
+		translate: 0 25%;
+		opacity: 1;
+	}
+}

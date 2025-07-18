@@ -9,3 +9,13 @@
 
 	--font-sans: 'Geist', sans-serif;
 }
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+@utility section {
+	@apply mx-auto max-w-screen-xl px-4 py-12;
+}
