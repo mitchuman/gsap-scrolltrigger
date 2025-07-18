@@ -53,7 +53,6 @@ export default function () {
 		ScrollTrigger.create({
 			trigger: '#hero',
 			start: 'top top',
-			end: '60% top', // 3/5 of the way through (3 seconds of 5)
 			toggleActions: 'play none none reverse',
 			animation: gsap.to('.header-link', { opacity: 1, duration: 0.5 }),
 		})
@@ -61,7 +60,6 @@ export default function () {
 		ScrollTrigger.create({
 			trigger: '#hero',
 			start: '50% top',
-			end: 'bottom top', // Full way through (5 seconds of 5)
 			toggleActions: 'play none none reverse',
 			animation: gsap.to('#header-logo', { opacity: 1, duration: 0.5 }),
 		})
@@ -87,13 +85,15 @@ export default function () {
 
 			<div className="relative">
 				<div className="flex items-center">
-					<Letter className="rounded">H</Letter>
+					<Letter className="rounded">A</Letter>
 					<span
 						className="stretching-line h-[2px] origin-center bg-current"
 						style={{ width: '50vw' }} // initial state
 					></span>
-					<Letter className="rounded-full">V</Letter>
-					<b className="ml-4 max-w-min leading-none">HubSpot Ventures</b>
+					<Letter className="rounded-full">B</Letter>
+					<b className="ml-4 max-w-min text-left leading-none">
+						Scroll Adventures
+					</b>
 				</div>
 
 				<HeroScrollArrow />

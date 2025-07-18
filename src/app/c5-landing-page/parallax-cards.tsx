@@ -16,14 +16,20 @@ export default function () {
 				start: 'top bottom',
 				end: 'bottom top',
 				scrub: true,
-				markers: true,
 			},
 		})
 
-		tl.from('#focus-area', {
-			translateY: '8rem',
-			duration: 3,
-		})
+		tl.fromTo(
+			'#focus-area',
+			{
+				translateY: '10rem',
+				duration: 3,
+			},
+			{
+				translateY: '-2rem',
+				duration: 3,
+			},
+		)
 	})
 
 	return (
@@ -33,10 +39,10 @@ export default function () {
 			<div className="grid gap-1 md:grid-cols-2">
 				<Card>
 					<ul>
-						<li>$500K - $5M initial investments</li>
-						<li>Independent investment team with fast decision making</li>
-						<li>Seed through Series B</li>
-						<li>Geography lorem ipsum dolor </li>
+						<li>Dynamic, interactive stories powered by scrolly-telling</li>
+						<li>Seamless animations using GSAP and ScrollTrigger</li>
+						<li>Engaging user experiences across web platforms</li>
+						<li>Flexible integration for diverse creative projects</li>
 					</ul>
 				</Card>
 				<Card id="focus-area">
@@ -44,10 +50,10 @@ export default function () {
 						<b>Focus Areas</b>
 					</p>
 					<ul>
-						<li>Intelligent Apps for SMBs</li>
-						<li>FinTech</li>
-						<li>AI & Agent Development</li>
-						<li>Data Infrastructure </li>
+						<li>Immersive Scrolly-Telling Experiences</li>
+						<li>Advanced Animation with GSAP Plugins</li>
+						<li>Interactive Storytelling for the Web</li>
+						<li>Seamless Integration of Motion and Content</li>
 					</ul>
 				</Card>
 			</div>
@@ -59,7 +65,7 @@ function Card({ className, ...props }: React.ComponentProps<'div'>) {
 	return (
 		<div
 			className={cn(
-				'flex flex-col justify-center rounded-xl bg-[#A9C1AF] px-8 py-6',
+				'prose flex flex-col justify-center rounded-xl bg-[#A9C1AF] px-8 py-6',
 				className,
 			)}
 			{...props}

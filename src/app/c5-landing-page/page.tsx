@@ -13,8 +13,8 @@ export default function () {
 
 				<section id="headline">
 					<h2 className="section max-w-3xl text-center text-3xl text-balance">
-						HubSpot Ventures partners with ambitious entrepreneurs who are
-						redefining how businesses grow and operate.
+						Discover the magic of scroll-driven animations and GSAP plugins to
+						create immersive storytelling experiences on the web.
 					</h2>
 				</section>
 

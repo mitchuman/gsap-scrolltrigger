@@ -8,11 +8,11 @@ export default function () {
 				id="header-logo"
 				className="max-w-min leading-none font-bold"
 			>
-				HubSpot Ventures
+				Scroll Adventures
 			</Link>
 
 			<Link href="/c5-landing-page/portfolio" className="header-link">
-				Portfolio
+				Explore
 			</Link>
 		</header>
 	)

@@ -19,3 +19,13 @@
 @utility section {
 	@apply mx-auto max-w-screen-xl px-4 py-12;
 }
+
+@utility prose {
+	@apply space-y-4;
+
+	& ul,
+	ol {
+		list-style-type: revert;
+		padding-left: 1em;
+	}
+}

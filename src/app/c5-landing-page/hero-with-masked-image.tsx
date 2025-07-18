@@ -18,40 +18,51 @@ export default function () {
 			},
 		})
 
-		tl.to('img', {
-			opacity: 0,
+		tl.to('#hero-with-masked-image figure', {
+			rotation: 90,
 			duration: 1,
-		})
+			transformOrigin: 'center center',
+		}).to(
+			'#hero-with-masked-image figure img',
+			{
+				rotate: -90,
+				duration: 1,
+			},
+			'<',
+		)
 	}, [])
 
 	return (
 		<section id="hero-with-masked-image" className="section py-24">
 			<div className="grid items-center gap-8 md:grid-cols-2">
-				<div>
-					<h2 className="text-2xl">Our Approach</h2>
+				<div className="prose mx-auto max-w-lg text-xl">
+					<h2 className="text-3xl">Our Approach</h2>
 					<p>
-						Our philosophy centers on building relationships, not just
-						completing rounds. We remain aligned with your interests and provide
-						support throughout your journey.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iste
+						obcaecati labore ipsum eos aliquid laudantium autem sunt ad! Eaque,
+						quae corrupti numquam illo ullam et dolore nostrum neque esse
+						quibusdam saepe doloremque quidem sint atque quasi ut cum natus.
 					</p>
 					<p>
-						Our commitment extends beyond capital to help you navigate our
-						ecosystem, surface new opportunities, and create lasting
-						partnerships that drive real business outcomes.
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa rem
+						sed minus nobis sequi, reiciendis modi quam sit id debitis!
 					</p>
 					<p>
-						When you partner with us, you join a selective portfolio of
-						innovative companies who actively support each other's growth
-						journey.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+						nobis atque placeat dolores numquam mollitia, quae vitae error illo
+						autem. Ex molestias aperiam in explicabo excepturi dolores vitae
+						sapiente ipsam!
 					</p>
 				</div>
 
-				<figure>
+				<figure
+					className="relative overflow-hidden"
+					style={{
+						mask: `url('/c5/hero-shape.svg') center/contain no-repeat`,
+					}}
+				>
 					<img
-						className="w-full"
-						style={{
-							mask: `url('/c5/hero-shape.svg') center/contain no-repeat`,
-						}}
+						className="w-full scale-110"
 						src={`https://placedog.net/800/800?random`}
 						alt=""
 						width={800}
