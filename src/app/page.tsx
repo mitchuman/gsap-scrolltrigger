@@ -4,10 +4,8 @@ const links: {
 	label: string
 	href: string
 }[] = [
-	{
-		label: 'Pinned Sections',
-		href: '/pinned-sections',
-	},
+	{ label: 'Pinned Sections', href: '/pinned-sections' },
+	{ label: 'C5 Landing Page', href: '/c5-landing-page' },
 ]
 
 export default function () {
