@@ -39,6 +39,8 @@ export default function () {
 					alt=""
 					width={1349}
 					height={633}
+					draggable={false}
+					loading="lazy"
 					unoptimized
 				/>
 

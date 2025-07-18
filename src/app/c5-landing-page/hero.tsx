@@ -80,6 +80,7 @@ export default function () {
 				alt=""
 				width={698}
 				height={659}
+				draggable={false}
 				unoptimized
 			/>
 
